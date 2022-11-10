@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,42 +11,12 @@
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
   </script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="./styles/styles.css" />
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://kit.fontawesome.com/7f5049b87a.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
   <title>Document</title>
 </head>
-<style>
-  .swiper {
-    width: 100%;
-    height: 100%;
-  }
-
-  .swiper-slide {
-    background-position: center;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-  }
-
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-</style>
 
 <body onload="myFunction()">
   <div class="waterfall">
@@ -54,6 +25,11 @@
     <div></div>
     <div></div>
     <div></div>
+  </div>
+  <div class="share-div">
+    <a href="" style="text-decoration: none; color:white;">
+      <i class="fa-solid fa-square-share-nodes"></i>
+    </a>
   </div>
   <div class="main" id="main">
     <div class="text-center">
@@ -78,6 +54,9 @@
           <li>
             <a href="#">Contact Us</a>
           </li>
+          <li>
+            <a href="login.html">Login</a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -90,7 +69,7 @@
                 ">
             <div class="cover">
               <div class="herotext">
-                <h1>Welcome To Our <span>Store</span></h1>
+                <h1>Welcome To Our <span style="color: #212529;">Store</span></h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, illum </p>
               </div>
             </div>
@@ -112,7 +91,7 @@
     <section class="myporducts pt-3">
       <div class="container">
         <div class="row">
-          <div class="col-md-3 col-6 col-sm-6 mb-3" data-aos="fade-left">
+          <div class="col-md-3 col-6 col-sm-6 " data-aos="fade-left">
             <div class="card">
               <img src="https://i.zoomtventertainment.com/story/pjimage_31_16.jpg?tr=w-400,h-300,fo-auto"
                 class="card-img-top"
@@ -124,7 +103,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 col-6 col-sm-6 mb-3" data-aos="fade-right">
+          <div class="col-md-3 col-6 col-sm-6 " data-aos="fade-right">
             <div class="card">
               <img src="https://i.zoomtventertainment.com/story/pjimage_31_16.jpg?tr=w-400,h-300,fo-auto"
                 class="card-img-top"
@@ -136,7 +115,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 col-6 col-sm-6 mb-3" data-aos="fade-left">
+          <div class="col-md-3 col-6 col-sm-6 " data-aos="fade-left">
             <div class="card">
               <img src="https://i.zoomtventertainment.com/story/pjimage_31_16.jpg?tr=w-400,h-300,fo-auto"
                 class="card-img-top"
@@ -148,7 +127,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 col-6 mb-3" data-aos="fade-right">
+          <div class="col-md-3 col-6 " data-aos="fade-right">
             <div class="card">
               <img src="https://i.zoomtventertainment.com/story/pjimage_31_16.jpg?tr=w-400,h-300,fo-auto"
                 class="card-img-top"
@@ -171,7 +150,7 @@
     var swiper = new Swiper(".mySwiper", {});
     var myVar;
     setTimeout(() => {
-    AOS.init();
+      AOS.init();
     }, 4000);
 
     function myFunction() {

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles/login.css">
+    <link rel="stylesheet" href="styles/signup.css">
 </head>
 <style>
 </style>
@@ -18,18 +18,25 @@
 
             <div class="login-box">
 
-                <h2>Login</h2>
+                <h2>Sign Up</h2>
                 <form action="/action_page.php" method="post">
                     <div class="container">
                         <div class="input-div">
-                            <input type="text" placeholder=" Username" name="uname" required>
+                            <input type="text" placeholder="Username" name="uname" required>
                         </div>
                         <div class="input-div">
-                            <input type="password" placeholder=" Password" name="psw" required>
+                            <input type="tel" placeholder="Phone no" name="uname" required>
+                        </div>
+                        <div class="input-div">
+                            <input type="email" placeholder="Email" name="uname" required>
+                        </div>
+                        <div class="input-div">
+                            <input type="password" placeholder="Enter Password" name="psw" required>
                         </div>
                         <button id="login-btn" type="submit">Login</button>
-                        <p class="signintext">Doesn't have an Account ? <a href="signup.html">Sign in</a></p>
+                        <p class="signintext">Already have an Account ? <a href="login.html">Log in</a></p>
                     </div>
+                </form>
 
             </div>
 
