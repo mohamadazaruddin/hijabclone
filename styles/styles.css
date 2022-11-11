@@ -231,6 +231,92 @@ ul {
     justify-content: center;
 }
 
+.shopbtn {
+    border: 2px solid black;
+    border-radius: 0;
+    padding: 5px 15px;
+    /* font-size: 16px; */
+    font-weight: 600;
+}
+
+.shopbtn:hover {
+    background-color: #000000;
+    color: #ffffff;
+    border: 2px solid black;
+}
+
+footer li {
+    display: block;
+    padding: 5px 0px;
+    color: #fff;
+}
+
+footer li a {
+    color: #b4b4b4;
+    text-decoration: none;
+}
+
+.solidtext {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.icons {
+    height: 25px;
+    width: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 10px;
+
+}
+
+.missiontext {
+    width: 450px;
+    margin: auto;
+    color: #686e6b;
+
+}
+
+.devinfo p {
+    color: #9d9393;
+    margin-top: 25px;
+}
+
+.devinfo a {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.instabtn {
+    padding: 0px 0px !important;
+    background: #f09433;
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    font-size: 25px;
+    color: white;
+}
+
+.wpbtn {
+    padding: 0px 0px !important;
+    background-color: #25D366;
+    font-size: 25px;
+    color: white;
+}
+
+.instabtn:hover {
+    background: #f09433;
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: #000;
+}
+
+.wpbtn:hover {
+    color: #000;
+    background-color: #25D366;
+}
+
 @media only screen and (max-width: 768px) {
 
     .mynav ul li {
@@ -241,5 +327,52 @@ ul {
     .divforslider {
         height: 300px;
         width: 100%;
+    }
+
+    footer li {
+        text-align: center;
+    }
+
+    .solidtext {
+        font-size: 16px;
+        color: #fff;
+        font-weight: 600;
+        margin-top: 35px;
+        margin-bottom: 0px;
+    }
+
+    .sociallinks {
+        justify-content: center;
+
+    }
+
+    .missiontext {
+        width: 100%;
+        margin: auto;
+        color: #686e6b;
+
+    }
+
+    .card-title {
+        font-size: 16px;
+    }
+
+    .card-text {
+        font-size: 12px;
+    }
+
+    .instabtn {
+        padding: 0px 0px !important;
+        background: #f09433;
+        background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        font-size: 25px;
+        color: white;
+    }
+
+    .wpbtn {
+        padding: 0px 0px !important;
+        background-color: #25D366;
+        font-size: 25px;
+        color: white;
     }
 }
